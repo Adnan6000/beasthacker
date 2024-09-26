@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
 }
 
 /* Header Styles */
@@ -15,9 +16,9 @@ header {
     color: white;
 }
 
-header .logo{
+header .logo {
     display: flex;
-    align-items: cneter;
+    align-items: center; /* Corrected spelling */
 }
 
 header .logo img {
@@ -31,14 +32,11 @@ header .company-name {
     color: #ffffff; /* White color for the text */
     font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
     line-height: 1; /* Ensures proper vertical alignment with the logo */
-    text-shadow: 
-        0 0 10px #ffffff; /* Soft white glow effect */
+    text-shadow: 0 0 10px #ffffff; /* Soft white glow effect */
     text-transform: uppercase; /* All uppercase letters */
     letter-spacing: 3px; /* Wider spacing for impact */
     transform: scale(1.1); /* Slightly enlarges the text for drama */
 }
-
-
 
 nav ul {
     list-style: none;
@@ -49,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:0 20px;
+    margin: 0 20px; /* Corrected margin spacing for nav items */
 }
 
 nav ul li a {
@@ -58,12 +56,13 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-nav ul li a:hover{
-background-color: #007bff;
-color: #fff;
-border-radius: 5px;
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .nav-toggle {
@@ -81,14 +80,12 @@ border-radius: 5px;
     width: 100%;
     height: 100%;
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 .hero .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover; /* Cover ensures image maintains aspect ratio */
 }
 
 .hero-text {
@@ -172,6 +169,7 @@ border-radius: 5px;
     color: #666;
     padding: 0 10px;
 }
+
 .why-choose-us ul li img {
     height: 50px; /* Reduce icon height */
     margin-bottom: 5px; /* Space between icon and text */
@@ -186,14 +184,60 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    /* Hero section adjustments for tablets */
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .why-choose-us ul li {
+        width: 45%; /* Adjust to 2 columns on tablets */
+    }
+}
+
 @media (max-width: 768px) {
     nav ul {
-        display: none;
+        display: none; /* Hide navigation menu on small screens */
     }
 
     .nav-toggle {
         display: block;
         cursor: pointer;
         font-size: 24px;
+    }
+
+    .why-choose-us ul li {
+        width: 100%; /* Single column layout for small screens */
+    }
+
+    /* Hero section adjustments for mobile */
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile-specific styles */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo, header .company-name {
+        justify-content: center;
+    }
+
+    .hero {
+        height: 500px; /* Adjusted height for smaller screens */
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 8px 15px;
     }
 }
