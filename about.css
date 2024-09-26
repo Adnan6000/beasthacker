@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,9 +17,9 @@ header {
     color: white;
 }
 
-header .logo{
+header .logo {
     display: flex;
-    align-items: cneter;
+    align-items: center; /* Corrected spelling from "cneter" to "center" */
 }
 
 header .logo img {
@@ -32,14 +33,11 @@ header .company-name {
     color: #ffffff; /* White color for the text */
     font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
     line-height: 1; /* Ensures proper vertical alignment with the logo */
-    text-shadow: 
-        0 0 10px #ffffff; /* Soft white glow effect */
+    text-shadow: 0 0 10px #ffffff; /* Soft white glow effect */
     text-transform: uppercase; /* All uppercase letters */
     letter-spacing: 3px; /* Wider spacing for impact */
     transform: scale(1.1); /* Slightly enlarges the text for drama */
 }
-
-
 
 nav ul {
     list-style: none;
@@ -50,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:0 20px;
+    margin: 0 20px; /* Corrected margin spacing */
 }
 
 nav ul li a {
@@ -59,19 +57,20 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-nav ul li a:hover{
-background-color: #007bff;
-color: #fff;
-border-radius: 5px;
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .nav-toggle {
     display: none;
 }
 
-
+/* About Section */
 .about {
     max-width: 800px; /* Sets the maximum width for the content */
     margin: 20px auto; /* Centers the section with margin on top and bottom */
@@ -89,26 +88,116 @@ border-radius: 5px;
     max-width: 100%; /* Ensures images fit within the section */
     height: auto; /* Maintains aspect ratio */
     border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
 
 .about p {
     margin: 15px 0; /* Vertical spacing for paragraphs */
+    color: #555; /* Softer text color for better readability */
 }
 
 .about ul {
     list-style: disc; /* Bulleted list style */
     margin-left: 20px; /* Indent for list items */
+    padding-left: 10px; /* Additional padding to keep space between bullet and text */
+    color: #444; /* Darker color for list items */
 }
 
+.about ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.about a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
-@media (max-width: 800px) {
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about {
+        max-width: 90%; /* Increase width on larger screens */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Adjust font size for nav items */
+    }
+
+    header .company-name {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide navigation menu on small screens */
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
     .about {
         margin: 10px; /* Reduces margin on smaller screens */
         padding: 15px; /* Reduces padding on smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack header content */
+        align-items: center; /* Center align for smaller screens */
+    }
+
+    header .company-name {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    footer p {
+        font-size: 14px; /* Reduce footer text size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile-specific styles */
+    header {
+        padding: 15px 10px; /* Reduce padding */
+    }
+
+    nav ul li a {
+        padding: 8px 10px; /* Reduce padding on nav items */
+        font-size: 12px; /* Reduce font size on nav items */
+    }
+
+    .about {
+        padding: 10px; /* Reduce padding for content */
+    }
+
+    .about h1, .about h2, .about h3 {
+        font-size: 18px; /* Adjust font size for headings */
+    }
+
+    .about p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+
+    footer p {
+        font-size: 12px; /* Further reduce footer text size */
     }
 }
