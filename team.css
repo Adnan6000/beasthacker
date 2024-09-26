@@ -1,5 +1,4 @@
 /* Team page specific styles */
-
 body, html {
     margin: 0;
     padding: 0;
@@ -17,9 +16,9 @@ header {
     color: white;
 }
 
-header .logo{
+header .logo {
     display: flex;
-    align-items: cneter;
+    align-items: center; /* Corrected spelling from "cneter" to "center" */
 }
 
 header .logo img {
@@ -33,14 +32,11 @@ header .company-name {
     color: #ffffff; /* White color for the text */
     font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
     line-height: 1; /* Ensures proper vertical alignment with the logo */
-    text-shadow: 
-        0 0 10px #ffffff; /* Soft white glow effect */
+    text-shadow: 0 0 10px #ffffff; /* Soft white glow effect */
     text-transform: uppercase; /* All uppercase letters */
     letter-spacing: 3px; /* Wider spacing for impact */
     transform: scale(1.1); /* Slightly enlarges the text for drama */
 }
-
-
 
 nav ul {
     list-style: none;
@@ -51,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:0 20px;
+    margin: 0 20px; /* Corrected margin spacing */
 }
 
 nav ul li a {
@@ -62,15 +58,16 @@ nav ul li a {
     font-size: 16px;
 }
 
-nav ul li a:hover{
-background-color: #007bff;
-color: #fff;
-border-radius: 5px;
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .nav-toggle {
-    display: none;
+    display: none; /* Hidden by default */
 }
+
 .team {
     text-align: center;
     padding: 60px 20px;
@@ -86,6 +83,7 @@ border-radius: 5px;
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 .team-member {
@@ -118,4 +116,18 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-list {
+        flex-direction: column; /* Stack team members vertically on small screens */
+        align-items: center; /* Center align team members */
+    }
+
+    .team-member {
+        width: 80%; /* Make team member cards take more width on small screens */
+        max-width: 300px; /* Set a max width to prevent excessive stretching */
+        margin-bottom: 20px; /* Spacing between team member cards */
+    }
 }
