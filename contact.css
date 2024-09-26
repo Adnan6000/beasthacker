@@ -1,5 +1,4 @@
 /* Contact Us page specific styles */
-
 body, html {
     margin: 0;
     padding: 0;
@@ -17,9 +16,9 @@ header {
     color: white;
 }
 
-header .logo{
+header .logo {
     display: flex;
-    align-items: cneter;
+    align-items: center; /* Corrected spelling from "cneter" to "center" */
 }
 
 header .logo img {
@@ -33,14 +32,11 @@ header .company-name {
     color: #ffffff; /* White color for the text */
     font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
     line-height: 1; /* Ensures proper vertical alignment with the logo */
-    text-shadow: 
-        0 0 10px #ffffff; /* Soft white glow effect */
+    text-shadow: 0 0 10px #ffffff; /* Soft white glow effect */
     text-transform: uppercase; /* All uppercase letters */
     letter-spacing: 3px; /* Wider spacing for impact */
     transform: scale(1.1); /* Slightly enlarges the text for drama */
 }
-
-
 
 nav ul {
     list-style: none;
@@ -51,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:0 20px;
+    margin: 0 20px; /* Corrected margin spacing */
 }
 
 nav ul li a {
@@ -62,14 +58,14 @@ nav ul li a {
     font-size: 16px;
 }
 
-nav ul li a:hover{
-background-color: #007bff;
-color: #fff;
-border-radius: 5px;
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .nav-toggle {
-    display: none;
+    display: none; /* Hidden by default */
 }
 
 .contact {
@@ -98,7 +94,8 @@ form {
     margin-bottom: 5px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -133,24 +130,25 @@ footer {
 /* Responsive navigation */
 @media (max-width: 768px) {
     .nav-toggle {
-        display: block;
+        display: block; /* Show the nav toggle button */
     }
 
     nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #444;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
+        display: none; /* Hide the menu initially */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #444; /* Background color for dropdown */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust this value as necessary */
+        right: 0; /* Align to the right */
+        width: 200px; /* Fixed width for the dropdown */
+        z-index: 1000; /* Ensure it appears above other content */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Vertical spacing for menu items */
     }
 
     nav ul.active {
-        display: flex;
+        display: flex; /* Show menu when active */
     }
 }
