@@ -6,21 +6,20 @@ navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Initialize Swiper
-const swiper = new Swiper('.swiper-container', {
-    autoplay: {
-        delay: 4000, // 3 seconds between slides
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true, // Allow clicking on the pagination dots
-    },
+var swiper = new Swiper('.swiper-container', {
+    loop: true, // Allows continuous loop mode
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    loop: true, // Loop the slides infinitely
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000, // 3 seconds delay
+        disableOnInteraction: false,
+    },
 });
 
 
