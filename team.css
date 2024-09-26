@@ -1,0 +1,121 @@
+/* Team page specific styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f6f8;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo{
+    display: flex;
+    align-items: cneter;
+}
+
+header .logo img {
+    height: 65px;
+    margin-right: 20px; /* Space between logo and company name */
+}
+
+header .company-name {
+    font-size: 2em; /* Large font size for prominence */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White color for the text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
+    line-height: 1; /* Ensures proper vertical alignment with the logo */
+    text-shadow: 
+        0 0 10px #ffffff; /* Soft white glow effect */
+    text-transform: uppercase; /* All uppercase letters */
+    letter-spacing: 3px; /* Wider spacing for impact */
+    transform: scale(1.1); /* Slightly enlarges the text for drama */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left:0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+background-color: #007bff;
+color: #fff;
+border-radius: 5px;
+}
+
+.nav-toggle {
+    display: none;
+}
+.team {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.team h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

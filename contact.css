@@ -1,0 +1,156 @@
+/* Contact Us page specific styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo{
+    display: flex;
+    align-items: cneter;
+}
+
+header .logo img {
+    height: 65px;
+    margin-right: 20px; /* Space between logo and company name */
+}
+
+header .company-name {
+    font-size: 2em; /* Large font size for prominence */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White color for the text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
+    line-height: 1; /* Ensures proper vertical alignment with the logo */
+    text-shadow: 
+        0 0 10px #ffffff; /* Soft white glow effect */
+    text-transform: uppercase; /* All uppercase letters */
+    letter-spacing: 3px; /* Wider spacing for impact */
+    transform: scale(1.1); /* Slightly enlarges the text for drama */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left:0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+background-color: #007bff;
+color: #fff;
+border-radius: 5px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}

@@ -1,0 +1,199 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo{
+    display: flex;
+    align-items: cneter;
+}
+
+header .logo img {
+    height: 65px;
+    margin-right: 20px; /* Space between logo and company name */
+}
+
+header .company-name {
+    font-size: 2em; /* Large font size for prominence */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White color for the text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
+    line-height: 1; /* Ensures proper vertical alignment with the logo */
+    text-shadow: 
+        0 0 10px #ffffff; /* Soft white glow effect */
+    text-transform: uppercase; /* All uppercase letters */
+    letter-spacing: 3px; /* Wider spacing for impact */
+    transform: scale(1.1); /* Slightly enlarges the text for drama */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left:0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+background-color: #007bff;
+color: #fff;
+border-radius: 5px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 700px; /* Set specific height */
+    overflow: hidden;
+}
+
+.hero .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hero .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10; /* Text stays in front of the slider */
+}
+
+.hero h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    text-shadow: 0px 0px 10px #ff0000, 0px 0px 20px #00ffbf, 0px 0px 30px #00ff00;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+.contact-button:active {
+    transform: scale(0.95);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap if the screen is small */
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us ul li {
+    width: 22%; /* Adjusts width of each item to ensure they are on the same line */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul li h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.why-choose-us ul li p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+.why-choose-us ul li img {
+    height: 50px; /* Reduce icon height */
+    margin-bottom: 5px; /* Space between icon and text */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+}
