@@ -67,7 +67,7 @@ nav ul li a:hover {
 }
 
 .nav-toggle {
-    display: none;
+    display: none; /* Initially hidden */
 }
 
 /* About Section */
@@ -149,7 +149,7 @@ footer p {
     }
 
     .nav-toggle {
-        display: block;
+        display: block; /* Show the toggle button on small screens */
         cursor: pointer;
         font-size: 24px;
         color: white;
