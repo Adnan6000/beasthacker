@@ -1,71 +1,44 @@
-/* Team page specific styles */
+/* General Styles */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f6f8;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Header Styles */
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-}
-
-header .logo {
-    display: flex;
-    align-items: center; /* Corrected spelling from "cneter" to "center" */
 }
 
 header .logo img {
-    height: 65px;
-    margin-right: 20px; /* Space between logo and company name */
+    width: 150px;
 }
 
-header .company-name {
-    font-size: 2em; /* Large font size for prominence */
-    font-weight: bold; /* Bold text */
-    color: #ffffff; /* White color for the text */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
-    line-height: 1; /* Ensures proper vertical alignment with the logo */
-    text-shadow: 0 0 10px #ffffff; /* Soft white glow effect */
-    text-transform: uppercase; /* All uppercase letters */
-    letter-spacing: 3px; /* Wider spacing for impact */
-    transform: scale(1.1); /* Slightly enlarges the text for drama */
-}
-
-nav ul {
+header nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    margin: 0 20px; /* Corrected margin spacing */
+header nav ul li {
+    margin-left: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    padding: 10px 15px;
+header nav ul li a {
     color: #fff;
-    font-weight: bold;
+    text-decoration: none;
     font-size: 16px;
 }
 
-nav ul li a:hover {
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-toggle {
-    display: none; /* Hidden by default */
+header nav ul li a:hover {
+    color: #f0c040;
 }
 
 .team {
