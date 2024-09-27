@@ -124,12 +124,6 @@ footer {
         display: none;
     }
 
-    header .nav-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-    }
-
     header nav ul.showing {
         display: flex;
     }
