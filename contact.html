@@ -9,7 +9,6 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="Cyber Asist Logo">
@@ -29,18 +28,18 @@
 
     <section class="contact">
         <h1>Contact Us</h1>
-        <form action="#" method="post">
+        <form action="sendMail.php" method="post">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
             </div>
             <button type="submit">Send Message</button>
         </form>
@@ -49,6 +48,6 @@
     <footer>
         <p>&copy; 2024 Cyber Asist | All Rights Reserved</p>
     </footer>
-        <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
