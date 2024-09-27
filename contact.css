@@ -1,4 +1,4 @@
-/* General styles */
+/* General Styles */
 body, html {
     margin: 0;
     padding: 0;
@@ -6,11 +6,11 @@ body, html {
     background-color: #f4f4f4;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
